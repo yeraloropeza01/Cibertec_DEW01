@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+import ParteFooter from './componentes/Footer';
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <ParteFooter/> 
     </div>
   );
 }

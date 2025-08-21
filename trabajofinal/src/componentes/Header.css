@@ -1,0 +1,107 @@
+/*HEADER*/
+.header{
+    width: 100%;
+    background-color: #000;
+}
+
+.header > div {
+  display: flex;              
+  align-items: center;        
+}
+
+.logo {
+  padding-left: 48px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 80px;
+}
+
+/* Menú centrado visualmente */
+.nav {
+  flex-grow: 1;               /* Ocupa el espacio sobrante */
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;    /* Centra horizontalmente */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 500px;
+}
+
+.nav ul li {
+  margin: 0 20px;
+}
+
+
+.nav ul li a {
+  position: relative; 
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 15px 10px;
+  display: block;
+  font-family: "SF Automaton", Arial, sans-serif;
+  font-size: 17px;
+transition: color 0.3s ease, border-radius 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color:#cfc4c4;
+  border-radius: 5px;
+}
+
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px; /* separación desde el texto */
+  width: 0%;
+  height: 2px; /* grosor de la cinta */
+  background-color: crimson;
+  transition: width 0.3s ease;
+}
+
+/* Al pasar el mouse, la cinta se expande */
+.nav ul li a:hover {
+  color: #e9e4e4;
+}
+
+.nav ul li a:hover::after {
+  width: 100%;
+}
+
+/*Codigo para que el menu se quede arriba estatico como un scrol*/
+.header {
+  width: 100%;
+  background-color: #000;
+  position: fixed;   /* siempre arriba */
+  top: 0;            /*esta pegado arriba */
+  left: 0;
+  z-index: 1000;     /*evita que lo tapen otros elementos*/
+}
+
+/*Main baner*/
+.banner_1  {
+  display: block;            /* evita espacios debajo */
+  width: 100%;               /* que ocupe todo el ancho del contenedor */
+  height: auto;              /* 50% del alto visible de la pantalla */
+       /* recorta manteniendo proporción */
+}
+
+.titulo{
+ text-align: center;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ padding-bottom: auto;
+ font-size: 25px;
+ margin-top: 0;
+ background-color: rgb(161, 154, 154);
+ color: #e9e4e4;
+}
+
+.main {
+  margin-top: 100px; /* igual a la altura del header */
+}

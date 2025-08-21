@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Header_menu from './componentes/Header_menu.jsx';
 
 import ParteMenu from './componentes/Menu';
 import ParteFooter from './componentes/Footer';
@@ -7,6 +8,7 @@ import ParteFooter from './componentes/Footer';
 function App() {
   return (
     <div className="App">
+      <Header_menu/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

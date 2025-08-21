@@ -11,15 +11,27 @@ const Header = () =>{
 
     // Estado para controlar qué imagen se muestra
     const [currentIndex, setCurrentIndex] = useState(0);
-
+    
     // useEffect con intervalo para cambiar imágenes automáticamente
     useEffect(() => {
-        const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 3000); // Cambia cada 3 segundos
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
-        return () => clearInterval(interval); // Limpieza del intervalo
-    }, [images.length]);
+  // Funciones para cambiar imagen
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const handleSelect = (index) => {
+    setCurrentIndex(index);
+  };
 
     return(
 <div>
@@ -44,12 +56,32 @@ const Header = () =>{
       <section className="section">
         <article>
             <div className="contenedor_img">
-                <img
-                  className="banner_1"
-                  src={images[currentIndex]}
-                  alt={`Banner ${currentIndex + 1}`}
-                />
+              {/* Flechas */}
+              <button className="arrow left" onClick={handlePrev}>
+                &#10094;
+              </button>
+              <img
+                key={currentIndex} // importante para transición
+                className="banner_1"
+                src={images[currentIndex]}
+                alt={`Banner ${currentIndex + 1}`}
+              />
+              <button className="arrow right" onClick={handleNext}>
+                &#10095;
+              </button>
+
+              {/* Puntos debajo */}
+              <div className="dots">
+                {images.map((_, index) => (
+                  <span
+                    key={index}
+                    className={`dot ${index === currentIndex ? "active" : ""}`}
+                    onClick={() => handleSelect(index)}
+                  ></span>
+                ))}
+              </div>
             </div>
+
                <div>
                   <h1 className="titulo">¿Qué desea realizar?</h1>
               </div>

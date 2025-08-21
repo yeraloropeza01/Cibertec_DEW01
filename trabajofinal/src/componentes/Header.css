@@ -1,3 +1,12 @@
+/*Codigo para que el menu se quede arriba estatico como un scrol*/
+.header {
+  width: 100%;
+  background-color: #000;
+  position: fixed;   /* siempre arriba */
+  top: 0;            /*esta pegado arriba */
+  left: 0;
+  z-index: 1000;     /*evita que lo tapen otros elementos*/
+}
 
 .header > div {
   display: flex;              
@@ -30,7 +39,6 @@
 .nav ul li {
   margin: 0 20px;
 }
-
 
 .nav ul li a {
   position: relative; 
@@ -68,33 +76,35 @@ transition: color 0.3s ease, border-radius 0.3s ease;
   width: 100%;
 }
 
-/*Codigo para que el menu se quede arriba estatico como un scrol*/
-.header {
-  width: 100%;
-  background-color: #000;
-  position: fixed;   /* siempre arriba */
-  top: 0;            /*esta pegado arriba */
-  left: 0;
-  z-index: 1000;     /*evita que lo tapen otros elementos*/
-}
-
 /*Main baner*/
-.banner_1  {
-  display: block;            /* evita espacios debajo */
-  width: 100%;               /* que ocupe todo el ancho del contenedor */
-  height: auto;              /* 50% del alto visible de la pantalla */
-       /* recorta manteniendo proporción */
+.section, article {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
 }
 
+.contenedor_img > img{
+width:100%;
+}
+
+.banner_1 {
+  width: 100%;      /* ocupa todo el ancho del contenedor */
+  height: auto;     /* mantiene proporción */
+  display: block;
+  max-width: 100%;  /* no se salga del contenedor */
+}
 .titulo{
+ width: 100%;
  text-align: center;
- padding-top: 20px;
- padding-bottom: 20px;
+ padding-top: 30px;
+ padding-bottom: 30px;
  padding-bottom: auto;
  font-size: 25px;
  margin-top: 0;
  background-color: rgb(161, 154, 154);
  color: #e9e4e4;
+  display: block; 
 }
 
 .main {

@@ -10,74 +10,79 @@ import BMW from '../imagenes/bmw.png';
 
 function ParteMainElige (){
     return(
-    <main class="main">
+    <main class="mainM">
         <div>
-          <section className="section">
-            <article className="articulo">
-            <div className="articulo1">
-                <div className="imagen">
-                  <img src={Volkswagen} alt=""/>
+          <h2 className="titul">Elige tu Marca</h2>
+          <section className="sectionM">
+            <article className="articuloM">
+              <div className="unoM">
+                <div className="articulo1M">
+                    <div className="imagen">
+                      <img src={Volkswagen} alt=""/>
+                    </div>
+                    <button className='botonM'>
+                      <span>Volkswagen</span>
+                    </button>
                 </div>
-                <button className='boton'>
-                  <span>Volkswagen</span>
-                </button>
-            </div>
-            <div className="articulo2">
-                <div className="imagen">
-                  <img src={MercedezBenz} alt=""/>
+                <div className="articulo1M">
+                    <div className="imagen">
+                      <img src={MercedezBenz} alt=""/>
+                    </div>
+                    <button className='botonM'>
+                      <span>MercedezBenz</span>
+                    </button>
                 </div>
-                <button className='boton'>
-                  <span>MercedezBenz</span>
-                </button>
-            </div>
-            <div className="articulo2">
-                <div className="imagen">
-                  <img src={Nisan} alt=""/>
+                <div className="articulo1M">
+                    <div className="imagen">
+                      <img src={Nisan} alt=""/>
+                    </div>
+                    <button className='botonM'>
+                      <span>Nisan</span>
+                    </button>
                 </div>
-                <button className='boton'>
-                  <span>Nisan</span>
-                </button>
-            </div>
-            <div className="articulo2">
-                <div className="imagen">
-                  <img src={Mazda} alt=""/>
+                <div className="articulo1M">
+                    <div className="imagen">
+                      <img src={Mazda} alt=""/>
+                    </div>
+                    <button className='botonM'>
+                      <span>Mazda</span>
+                    </button>
                 </div>
-                <button className='boton'>
-                  <span>Mazda</span>
-                </button>
-            </div>
-            <div className="articulo2">
-                <div className="imagen">
-                  <img src={Honda} alt=""/>
+              </div>
+              <div className="dosM">
+                <div className="articulo2M">
+                    <div className="imagen">
+                      <img src={Honda} alt=""/>
+                    </div>
+                    <button className='botonM'>
+                      <span>Honda</span>
+                    </button>
                 </div>
-                <button className='boton'>
-                  <span>Honda</span>
-                </button>
-            </div>
-            <div className="articulo2">
-                <div className="imagen">
-                  <img src={Lexus} alt=""/>
+                <div className="articulo2M">
+                    <div className="imagen">
+                      <img src={Lexus} alt=""/>
+                    </div>
+                    <button className='botonM'>
+                      <span>Lexus</span>
+                    </button>
                 </div>
-                <button className='boton'>
-                  <span>Lexus</span>
-                </button>
-            </div>
-            <div className="articulo2">
-                <div className="imagen">
-                  <img src={Lamborghini} alt=""/>
+                <div className="articulo2M">
+                    <div className="imagen">
+                      <img src={Lamborghini} alt=""/>
+                    </div>
+                    <button className='botonM'>
+                      <span>Lamborghini</span>
+                    </button>
                 </div>
-                <button className='boton'>
-                  <span>Lamborghini</span>
-                </button>
-            </div>
-            <div className="articulo2">
-                <div className="imagen">
-                  <img src={BMW} alt=""/>
+                <div className="articulo2M">
+                    <div className="imagen">
+                      <img src={BMW} alt=""/>
+                    </div>
+                    <button className='botonM'>
+                      <span>BMW</span>
+                    </button>
                 </div>
-                <button className='boton'>
-                  <span>BMW</span>
-                </button>
-            </div>
+              </div>
             </article>
           </section>
         </div>

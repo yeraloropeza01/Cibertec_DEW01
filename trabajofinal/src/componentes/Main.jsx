@@ -5,7 +5,10 @@ import "./Main.css";
 function ParteMain(){
    return (
     <main class="main">
-        <div>
+        <div className='arri'>
+          <h1 className="titulo">¿Qué desea realizar?</h1>
+        </div>
+        <div className='aba'>
           <section className="section">
             <article className="articulo">
             <div className="articulo1">

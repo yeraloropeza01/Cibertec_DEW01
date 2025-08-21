@@ -35,11 +35,11 @@ const Header = () =>{
 
     return(
 <div>
-        <header className="header">
+    <header className="header">
     <div>
-        <div>
+      <div>
           <img className="logo" src={logo} alt="" />
-        </div>
+      </div>
       <nav className="nav">
         <ul>
           <li><a href="daszda">MODELOS</a></li>
@@ -80,11 +80,7 @@ const Header = () =>{
                   ></span>
                 ))}
               </div>
-            </div>
-
-               <div>
-                  <h1 className="titulo">¿Qué desea realizar?</h1>
-              </div>
+            </div>    
       </article>
     </section>
   </main>

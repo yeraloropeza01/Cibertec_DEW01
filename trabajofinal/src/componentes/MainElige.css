@@ -1,0 +1,96 @@
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.section {
+    display: flex;
+    flex-direction: row;
+}
+.articulo {
+  display: flex;             
+  justify-content: space-between;
+  width: 60%;
+  height: auto;
+  margin: 50px auto;             
+  margin-bottom: 20px;
+  gap: 20px;    
+  padding-bottom: 40px;              
+}
+
+/* CSS */
+.boton {
+  
+  background-color: #999999;
+  border-radius: 20px;
+  border-width: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px; 
+  
+  opacity: 1;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.boton:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #944646;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 20px;
+}
+
+.boton:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.boton:after {
+  background-color: #FFFFFF;
+}
+
+.boton span {
+  z-index: 1;
+  position: relative;
+}
+
+.articulo1, .articulo2 {
+    
+    flex: 1;                       
+    padding: 20px;
+    text-align: center;
+    border-radius: 11px;            
+    cursor: pointer;             
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); 
+    width: 100%;
+    max-width: 1500px;
+    filter: grayscale(60%);
+}
+
+.articulo1:hover, .articulo2:hover {
+  transform: translateY(-5px);   
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25); 
+   filter: grayscale(0);
+}
+
+.imagen > img{
+  width: 90%;
+  margin-top: 22px;
+  border-radius: 11px;
+}

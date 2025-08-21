@@ -1,8 +1,8 @@
 import Vende from '../imagenes/v1.jpg';
 import Compra from '../imagenes/compra_4.jpg';
-import "./Menu.css";
+import "./Main.css";
 
-function ParteMenu(){
+function ParteMain(){
    return (
     <main class="main">
         <div>
@@ -30,4 +30,4 @@ function ParteMenu(){
     </main> 
    );
 }
-export default ParteMenu;
+export default ParteMain;

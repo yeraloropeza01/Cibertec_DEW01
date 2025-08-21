@@ -95,18 +95,6 @@ width:100%;
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
 }
-.titulo{
- width: 100%;
- text-align: center;
- padding-top: 30px;
- padding-bottom: 30px;
- padding-bottom: auto;
- font-size: 25px;
- margin-top: 0;
- background-color: rgb(161, 154, 154);
- color: #e9e4e4;
-  display: block; 
-}
 
 .main {
   margin-top: 100px; /* igual a la altura del header */

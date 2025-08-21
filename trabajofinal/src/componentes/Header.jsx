@@ -81,10 +81,6 @@ const Header = () =>{
                 ))}
               </div>
             </div>
-
-               <div>
-                  <h1 className="titulo">¿Qué desea realizar?</h1>
-              </div>
       </article>
     </section>
   </main>

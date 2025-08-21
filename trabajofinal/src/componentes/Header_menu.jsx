@@ -6,7 +6,6 @@ import logo from "../imagenes/logo1.png"
 import banner from "../imagenes/banner_1.webp";
 import banner1 from "../imagenes/tres.jpeg"
 
-
 const Header_menu = () =>{
     // Array de imágenes del carrusel
     const images = [banner, banner1];

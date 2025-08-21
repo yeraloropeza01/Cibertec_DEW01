@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-
+import ParteMenu from './componentes/Menu';
 import ParteFooter from './componentes/Footer';
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <ParteMenu/>
       <ParteFooter/> 
     </div>
   );

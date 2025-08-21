@@ -2,44 +2,43 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .footer-contenedor {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.footer-iz > ul {
+    list-style: none;
+    float: left;
+    text-align: left;
+}
+.footer-ce > ul {
+    list-style: none;
+    text-align: center;
+    
+}
+.footer-de > ul {
+    list-style: none;
+    float: right;
+    text-align: right;
+   
+}
+ul > li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 0;
     
 }
 
-.footer-col h3 {
-  font-size: 21px;
-  margin-bottom: 15px;
-  font-weight: normal;
-  
-}
-
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  
-}
-
-.footer-col ul li {
-  margin-bottom: 8px;
-}
-
-.footer-col ul li a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 19px;
-}
-
-.footer-col ul li a:hover {
-  color: #fff;
-}
 
 .footer-bottom {
   text-align: center;

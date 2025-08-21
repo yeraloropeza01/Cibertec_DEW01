@@ -33,11 +33,11 @@ const Header_menu = () =>{
         </div>
         <nav className="nav">
           <ul>
-            <li><a href="#mazda">MODELOS</a></li>
-            <li><a href="#dae">SERVICIOS</a></li>
-            <li><a href="#wasa">MAZDA LIFE</a></li>
-            <li><a href="#dasd">SUCURSALES</a></li>
-            <li><a href="#">LLAMADO A REVISIÓN</a></li>
+            <li><a href="daszda">MODELOS</a></li>
+            <li><a href="dadae">SERVICIOS</a></li>
+            <li><a href="wasa">MAZDA LIFE</a></li>
+            <li><a href="dasd">SUCURSALES</a></li>
+            <li><a href="das">LLAMADO A REVISIÓN</a></li>
           </ul>
         </nav>
       </div>

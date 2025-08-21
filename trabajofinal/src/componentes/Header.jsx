@@ -4,21 +4,23 @@ import logo from "../imagenes/logo1.png"
 /*Imagen baner carrusel*/ 
 import banner from "../imagenes/banner_1.webp";
 import banner1 from "../imagenes/tres.jpeg"
+import banner2 from "../imagenes/tres.jpeg"
 
 const Header = () =>{
     // Array de imágenes del carrusel
-    const images = [banner, banner1];
+    const images = [banner, banner1,banner2];
 
     // Estado para controlar qué imagen se muestra
     const [currentIndex, setCurrentIndex] = useState(0);
     
     // useEffect con intervalo para cambiar imágenes automáticamente
-    useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+   useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  }, 3000);
+
+  return () => clearInterval(interval);
+}, [images.length]); 
 
   // Funciones para cambiar imagen
   const handleNext = () => {
@@ -44,9 +46,9 @@ const Header = () =>{
         <ul>
           <li><a href="daszda">MODELOS</a></li>
           <li><a href="dadae">SERVICIOS</a></li>
-          <li><a href="wasa">MAZDA LIFE</a></li>
-          <li><a href="dasd">SUCURSALES</a></li>
-          <li><a href="das">LLAMADO A REVISIÓN</a></li>
+          <li><a href="wasa">MODELOS</a></li>
+          <li><a href="dasd">SERVICIOS</a></li>
+          <li><a href="das">PROMOCIONES</a></li>
         </ul>
       </nav>
     </div>

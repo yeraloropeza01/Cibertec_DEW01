@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*Codigo para que el menu se quede arriba estatico como un scrol*/
 .header {
   width: 100%;
@@ -84,8 +89,13 @@ transition: color 0.3s ease, border-radius 0.3s ease;
 
 }
 
+.contenedor_img{
+  position: relative;
+}
+
 .contenedor_img > img{
 width:100%;
+position: relative;
 }
 
 .banner_1 {
@@ -94,32 +104,31 @@ width:100%;
   display: block;
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
-}
-
-.main {
-  margin-top: 100px; /* igual a la altura del header */
+  margin-top: 84px;
 }
 
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
   border: none;
-  color: white;
-  font-size: 2rem;
-  padding: 10px;
+  background: transparent;  /* <- fondo siempre transparente */
+  color: black;             /* flecha negra */
+  font-size: 5rem;
+  padding: 0;               /* quitamos espacio extra */
   cursor: pointer;
   z-index: 10;
-  border-radius: 50%;
 }
 
 .arrow.left { left: 10px; }
 .arrow.right { right: 10px; }
 
-.arrow:hover { background-color: rgba(0,0,0,0.8); }
-
+.arrow:hover {
+  color: #333;   /* al pasar el mouse, la flecha se pone más oscura */
+  background: transparent; /* fondo sigue transparente */
+}
 /* Dots indicadores */
+
 .dots {
   text-align: center;
   position: absolute;
@@ -139,5 +148,5 @@ width:100%;
 }
 
 .dot.active {
-  background-color: white;
+  background-color: black;
 }

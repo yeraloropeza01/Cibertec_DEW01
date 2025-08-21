@@ -1,10 +1,20 @@
 
-
-
-
 .main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.titulo{
+ width: 100%;
+ text-align: center;
+ padding-top: 30px;
+ padding-bottom: 30px;
+ padding-bottom: auto;
+ font-size: 25px;
+ margin-top: 0px;
+ background-color: rgb(161, 154, 154);
+ color: #ffffff;
+  display: block; 
 }
 .section {
     display: flex;

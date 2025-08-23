@@ -2,7 +2,7 @@ import Vende from '../imagenes/v1.jpg';
 import Compra from '../imagenes/compra_4.jpg';
 import "./Main.css";
 
-function ParteMain(){
+function ParteMain({onElegir}){
    return (
     <main class="main">
         <div className='arri'>
@@ -23,7 +23,7 @@ function ParteMain(){
                 <div className="imagen">
                   <img src={Compra} alt=""/>
                 </div>
-                <button className='boton'>
+                <button onClick={onElegir} className='boton'>
                   <span>¿Quieres comprar?</span>
                 </button>
             </div>

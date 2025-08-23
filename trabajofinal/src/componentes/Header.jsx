@@ -6,7 +6,7 @@ import banner from "../imagenes/banner_1.webp";
 import banner1 from "../imagenes/tres.jpeg"
 import banner2 from "../imagenes/tres.jpeg"
 
-const Header = () =>{
+const Header = ({onServicio}) =>{
     // Array de imágenes del carrusel
     const images = [banner, banner1,banner2];
 
@@ -15,27 +15,28 @@ const Header = () =>{
     
     // useEffect con intervalo para cambiar imágenes automáticamente
    useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  }, 3000);
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
 
-  return () => clearInterval(interval);
-}, [images.length]); 
+    return () => clearInterval(interval);
+    }, [images.length]); 
 
-  // Funciones para cambiar imagen
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  };
+    // Funciones para cambiar imagen
+    const handleNext = () => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    };
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
+    const handlePrev = () => {
+      setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    };
 
-  const handleSelect = (index) => {
-    setCurrentIndex(index);
-  };
+    const handleSelect = (index) => {
+      setCurrentIndex(index);
+    };
 
     return(
+      
 <div>
         <header className="header">
     <div>
@@ -45,7 +46,9 @@ const Header = () =>{
       <nav className="nav">
         <ul>
           <li><a href="daszda">MODELOS</a></li>
-          <li><a href="dadae">SERVICIOS</a></li>
+          <li><button onClick={onServicio} className="link-button">
+                SERVICIOS
+              </button></li>
           <li><a href="wasa">MODELOS</a></li>
           <li><a href="dasd">SERVICIOS</a></li>
           <li><a href="das">PROMOCIONES</a></li>

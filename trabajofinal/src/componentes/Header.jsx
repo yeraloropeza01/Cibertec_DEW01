@@ -49,8 +49,6 @@ const Header = ({onServicio}) =>{
           <li><button onClick={onServicio} className="link-button">
                 SERVICIOS
               </button></li>
-          <li><a href="wasa">MODELOS</a></li>
-          <li><a href="dasd">SERVICIOS</a></li>
           <li><a href="das">PROMOCIONES</a></li>
         </ul>
       </nav>

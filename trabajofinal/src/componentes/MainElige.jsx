@@ -17,7 +17,7 @@ function ParteMainElige (){
             <article className="articuloM">
               <div className="unoM">
                 <div className="articulo1M">
-                    <div className="imagen">
+                    <div className="imagenM">
                       <img src={Volkswagen} alt=""/>
                     </div>
                     <button className='botonM'>
@@ -25,7 +25,7 @@ function ParteMainElige (){
                     </button>
                 </div>
                 <div className="articulo1M">
-                    <div className="imagen">
+                    <div className="imagenM">
                       <img src={MercedezBenz} alt=""/>
                     </div>
                     <button className='botonM'>
@@ -33,7 +33,7 @@ function ParteMainElige (){
                     </button>
                 </div>
                 <div className="articulo1M">
-                    <div className="imagen">
+                    <div className="imagenM">
                       <img src={Nisan} alt=""/>
                     </div>
                     <button className='botonM'>
@@ -41,7 +41,7 @@ function ParteMainElige (){
                     </button>
                 </div>
                 <div className="articulo1M">
-                    <div className="imagen">
+                    <div className="imagenM">
                       <img src={Mazda} alt=""/>
                     </div>
                     <button className='botonM'>
@@ -51,7 +51,7 @@ function ParteMainElige (){
               </div>
               <div className="dosM">
                 <div className="articulo2M">
-                    <div className="imagen">
+                    <div className="imagenM">
                       <img src={Honda} alt=""/>
                     </div>
                     <button className='botonM'>
@@ -59,7 +59,7 @@ function ParteMainElige (){
                     </button>
                 </div>
                 <div className="articulo2M">
-                    <div className="imagen">
+                    <div className="imagenM">
                       <img src={Lexus} alt=""/>
                     </div>
                     <button className='botonM'>
@@ -67,7 +67,7 @@ function ParteMainElige (){
                     </button>
                 </div>
                 <div className="articulo2M">
-                    <div className="imagen">
+                    <div className="imagenM">
                       <img src={Lamborghini} alt=""/>
                     </div>
                     <button className='botonM'>
@@ -75,7 +75,7 @@ function ParteMainElige (){
                     </button>
                 </div>
                 <div className="articulo2M">
-                    <div className="imagen">
+                    <div className="imagenM">
                       <img src={BMW} alt=""/>
                     </div>
                     <button className='botonM'>

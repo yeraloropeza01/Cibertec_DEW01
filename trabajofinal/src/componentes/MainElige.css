@@ -66,14 +66,17 @@
   display: inline-block;
   font-family: Clarkson,Helvetica,sans-serif;
   font-size: 14px; 
-  
   opacity: 1;
-  padding: 1.5em 2.2em;
   position: relative;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
+.botonM {
+  width: 150px;
+  height: 50px;
+}
+
 
 .botonM:before {
   animation: opacityFallbackOut .5s step-end forwards;
@@ -125,7 +128,7 @@
    filter: grayscale(0);
 }
 
-.imagen > img{
+.imagenM > img{
   width: 90%;
   margin-top: 22px;
   border-radius: 11px;

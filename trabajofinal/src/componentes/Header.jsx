@@ -37,23 +37,23 @@ const Header = ({onServicio}) =>{
 
     return(
       
-<div>
-        <header className="header">
     <div>
-        <div>
-          <img className="logo" src={logo} alt="" />
+      <header className="header">
+        <div className='contenedor1080px'>
+          <div>
+            <img className="logo" src={logo} alt="" />
+          </div>
+          <nav className="nav ">
+            <ul>
+              <li><a href="daszda">MODELOS</a></li>
+              <li><button onClick={onServicio} className="link-button">
+                    SERVICIOS
+                  </button></li>
+              <li><a href="das">PROMOCIONES</a></li>
+            </ul>
+          </nav>
         </div>
-      <nav className="nav">
-        <ul>
-          <li><a href="daszda">MODELOS</a></li>
-          <li><button onClick={onServicio} className="link-button">
-                SERVICIOS
-              </button></li>
-          <li><a href="das">PROMOCIONES</a></li>
-        </ul>
-      </nav>
-    </div>
-    </header>
+      </header>
     
    <main className="main">
       <section className="section">

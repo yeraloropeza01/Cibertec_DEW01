@@ -1,10 +1,4 @@
 
-.mainM{
-    margin-top: 0;
-    padding-top: 0;
-    flex-direction: row;
-    
-}
 .titul {
   color: #000000;
   width: 100%;
@@ -15,43 +9,21 @@
   padding-bottom: 30px;
   background-color: rgb(167, 167, 167);
 }
-.sectionM {
-    width: 100%;
+.marcas {
     display: flex;
-    flex-direction: column;
-    
+    flex-wrap: wrap;
+    gap:13px;   
+    text-align: center;
 }
-.articuloM {
-  display: flex;  
-  flex-direction: column;           
-  
-  width: 80%;
-  height: auto;
-  margin: 50px auto;             
-  margin-bottom: 20px;
-  gap: 20px;    
-  padding-bottom: 40px;              
+
+.marca {
+  flex: 0 0 calc(25% - 10px); /* 3 columnas con espacio entre ellas */
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
-.unoM {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  height: auto;
-  margin: 30px auto;             
-  margin-bottom: 0px;
-  gap: 20px;    
-  padding-bottom: 0px; 
-}
-.dosM {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  height: auto;
-  margin: 50px auto;             
-  margin-bottom: 20px;
-  gap: 20px;    
-  padding-bottom: 40px; 
-}
+
 
 /* CSS */
 .botonM {
@@ -124,36 +96,11 @@
     filter: grayscale(0%);
 }
 
-.articulo1M:hover {
-  transform: translateY(-5px);   
-  box-shadow: 0 15px 30px rgba(0,0,0,0.25); 
-   filter: grayscale(0);
-}
 
 .imagenM > img{
   width: 90%;
   margin-top: 22px;
   border-radius: 11px;
-}
-.articulo2M {
-    
-    flex: 1;                       
-    padding: 20px;
-    text-align: center;
-    border-radius: 11px;            
-    cursor: pointer;             
-    transition: transform 0.2s ease, box-shadow 0.2s ease; 
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15); 
-    width: 100%;
-    background-color: #ebebeb;
-    
-    filter: grayscale(60%);
-}
-
-.articulo2M:hover {
-  transform: translateY(-5px);   
-  box-shadow: 0 15px 30px rgba(0,0,0,0.25); 
-   filter: grayscale(0);
 }
 /* resposivee */
 /* @media (max-width: 1024px) {
@@ -173,37 +120,14 @@
 } */
 
 /* -------- CELULARES -------- */
-/* @media (max-width: 600px) {
-  .titul {
-    font-size: 18px;
-    padding: 15px;
+@media (max-width: 600px) {
+
+  .item {
+    flex: 0 0 calc(50% - 10px);
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
-  .unoM, .dosM {
-    width: 100%;
-    flex-direction: column;
-    margin: 20px auto;
-    gap: 10px;
-  }
-
-  .articuloM {
-    width: 100%;
-    margin: 20px auto;
-    gap: 15px;
-  }
-
-  .articulo1M, .articulo2M {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .imagen > img {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .botonM {
-    font-size: 12px;
-    padding: 1em 1.5em;
-  }
-} */
+} 

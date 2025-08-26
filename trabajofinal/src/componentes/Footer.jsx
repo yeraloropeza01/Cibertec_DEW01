@@ -1,9 +1,16 @@
 import "./Footer.css";
 
 function ParteFooter() {
+  const developers = [
+    "Gerber Pacheco",
+    "Jheraldo Anconeira",
+    "Yhuber Anconeira",
+    "Tony Astete",
+  ]
+
   return (
     <footer>
-      <div className="footer-contenedor">
+      <div className="footer-contenedor contenedor1080px">
         <div className="footer-iz">
          
           <ul>
@@ -36,8 +43,11 @@ function ParteFooter() {
       </div>
 
       <div className="footer-bottom">
-        © 2025 Mercedes-Benz Perú. Todos los derechos reservados.
-        Políticas de privacidad | Términos y condiciones | Cookies
+        © 2025 Desarrollado por {
+          developers.map((d) => {
+            return `${d}` 
+          }).join(",")
+        }
       </div>
     </footer>
   );

@@ -2,15 +2,18 @@ import "./MainElige.css"
 
 function ParteMainElige (){
   
-    const marcas = [
-      {nombre: "Volkswager", imagen: "volkswagen.png"},
+    const marcasUno = [
+      {nombre: "Volkswagen", imagen: "volkswagen.png"},
       {nombre: "Mercedes", imagen: "mercedez.png"},
-      {nombre: "nissan", imagen: "nissan.png"},
-      {nombre: "mazda", imagen: "mazda.png"},
+      {nombre: "Nissan", imagen: "nissan.png"},
+      {nombre: "Mazda", imagen: "mazda.png"},
+    
+    ]
+    const marcasDos = [
       {nombre: "honda", imagen: "honda.png"},
       {nombre: "lexus", imagen: "lexus.png"},
-      {nombre: "lambohini", imagen: "lamboghini.png"},
-      {nombre: "bwm", imagen: "bmw.png"}
+      {nombre: "lamborghini", imagen: "lamboghini.png"},
+      {nombre: "bmw", imagen: "bmw.png"}
       
     ]
     return(
@@ -21,7 +24,7 @@ function ParteMainElige (){
             <article className="articuloM">
               <div className="unoM">
                 {
-                  marcas.map((m) => {
+                  marcasUno.map((m) => {
                     return (
                     <div className="articulo1M">
                     <div className="imagenM">
@@ -33,8 +36,21 @@ function ParteMainElige (){
                     </div>)
                   } ) 
                 }
-
-                
+              </div>
+              <div className="dosM">
+                {
+                  marcasDos.map((m) => {
+                    return (
+                    <div className="articulo1M">
+                    <div className="imagenM">
+                      <img src={`/marcas/${m.imagen}`} alt=""/>
+                    </div>
+                    <button className='botonM'>
+                      <span>{m.nombre}</span>
+                    </button>
+                    </div>)
+                  } ) 
+                }
               </div>
             </article>
           </section>

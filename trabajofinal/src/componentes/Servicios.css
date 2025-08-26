@@ -99,11 +99,13 @@
   height: 0;
   overflow: hidden;
   transition: all 0.4s ease;
-  font-family: Clarkson,Helvetica,sans-serif;
-  margin-top: 10px;
+  text-align: justify;
+  font-style: italic;
 }
-
-.botonS:hover + .textoOculto {
+.articulo1S:hover .textoOculto,
+.articulo2S:hover .textoOculto,
+.articulo3S:hover .textoOculto,
+.textoOculto.visible {
   opacity: 1;
   height: auto;
 }

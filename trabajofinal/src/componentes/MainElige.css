@@ -76,7 +76,9 @@
   width: 150px;
   height: 50px;
 }
-
+.botonM > span {
+  font-weight: bolder;
+}
 
 .botonM:before {
   animation: opacityFallbackOut .5s step-end forwards;
@@ -119,7 +121,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.15); 
     width: 100%;
     background-color: #ebebeb;
-    filter: grayscale(60%);
+    filter: grayscale(0%);
 }
 
 .articulo1M:hover {

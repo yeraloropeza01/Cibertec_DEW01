@@ -40,7 +40,6 @@
 .promos-articulo1 > .promos-texto {
   width: 50%;
 }
-/* Colores diferentes */
 .promos-articulo1 {
   background-color: rgb(52, 102, 102);
 }
@@ -49,6 +48,18 @@
 }
 .promos-articulo3 {
   background-color: #7f858d;
+}
+.promos-texto {
+  font-size: 20px;
+  font-family: "SF Automaton", Arial, sans-serif;
+  text-align: left;
+  transform: translateX(50px);
+  animation: aparecer 1s ease-out forwards;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: aparecer 1s ease-out forwards;
+  float: right;
+  margin-left: 5%;
 }
 .promos-texto,
 .promos-texto-izq {
@@ -60,21 +71,39 @@
   opacity: 0;
   margin: 0 5%;
 }
-/*Titulos (h3)*/
-.promos-texto h3, .promos-texto-izq h3 {
+.promos-texto > p > h3{
+  font-size: 30px;
+}
+.promos-texto-izq > p > h3{
+  font-size: 30px;
+}
+.promos-texto-izq > p > .pregunta {
+  color:cadetblue;
+  font-size: 25px;
+   font-family: "SF Automaton", Arial, sans-serif;
+}
+.promos-texto > p > .pregunta {
+  color:cadetblue;
+  font-size: 25px;
+   font-family: "SF Automaton", Arial, sans-serif;
+}
+.promo-img {
+  width: 45%;     
+}
+.promos-texto h3,
+.promos-texto-izq h3 {
   font-size: 30px; 
   font-family: "SF Automaton", Arial, sans-serif;
   margin-bottom: 10px;
 }
-/*Texto destacad */
-.promos-texto .pregunta, .promos-texto-izq .pregunta {
+.promos-texto .pregunta,
+.promos-texto-izq .pregunta {
   color: cadetblue;
   font-size: 18px;
   font-family: Arial, sans-serif;
   font-weight: bold;
   margin-bottom: 8px;
 }
-/*Imagenes*/
 .promo-img {
   width: 45%;    
   height: auto;  

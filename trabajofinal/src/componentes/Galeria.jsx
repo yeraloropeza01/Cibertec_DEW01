@@ -1,10 +1,8 @@
 import { useState } from "react";
 import DetalleVehiculo from "./DetalleVehiculo.jsx";
 import "./Galeria.css";
-
 function Galeria({ marca }) {
   const [vehiculoSeleccionado, setVehiculoSeleccionado] = useState(null);
-
   // lista de vehículos (agrega/edita según tus imágenes en /public/modelos/)
   const vehiculos = [
   { 
@@ -344,7 +342,6 @@ function Galeria({ marca }) {
     aceleracion: "5.3 seg"
   }
 ];
-
   // filtrar por la marca recibida (case-insensitive)
    const filtrados = vehiculos.filter(v => v.marca === marca);
 
@@ -356,7 +353,6 @@ function Galeria({ marca }) {
       />
     );
   }
-
   return (
     <div className="vehiculo-contenedor">
       {filtrados.map((v, index) => (
@@ -370,5 +366,4 @@ function Galeria({ marca }) {
     </div>
   );
 }
-
 export default Galeria;

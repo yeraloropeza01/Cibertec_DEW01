@@ -1,7 +1,6 @@
 import Vende from '../imagenes/v1.jpg';
 import Compra from '../imagenes/compra_4.jpg';
 import "./Main.css";
-
 function Main({mostrarPagina}){
    return (
     <main className="main contenedor1080px sombra">

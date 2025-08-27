@@ -9,7 +9,7 @@ import Promociones from './componentes/Promociones.jsx';
 import RegistroUsuario from './componentes/RegistroUsuario.jsx';
 import RegistroVehiculo from './componentes/RegistroVehiculo.jsx';
 import ListaVehiculos from './componentes/ListaVehiculo.jsx';
-import { GlobalProvider } from './GlobalContext';
+import { GlobalProvider } from './GlobalContext.jsx';
 
 
 function App() {

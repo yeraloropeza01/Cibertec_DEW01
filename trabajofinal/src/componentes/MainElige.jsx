@@ -2,13 +2,10 @@ import { useContext, useState } from "react";
 import "./MainElige.css";
 import GaleriaVehiculos from "./Galeria.jsx";
 import { GlobalContext } from "../GlobalContext.jsx";
-
 function MainElige() {
   const contextType = GlobalContext
   const [marcaSeleccionada, setMarcaSeleccionada] = useState(null);
   const {marcas} = useContext(GlobalContext)
-
-
   // 👇 Si ya seleccionó una marca, mostramos la galería
   if (marcaSeleccionada) {
     return (
@@ -23,10 +20,8 @@ function MainElige() {
       </div>
     );
   }
-
   // 👇 Si no hay marca seleccionada, mostramos la lista de marcas
-  return (
-    
+  return (    
     <main className="sombra contenedor1080px">
       <div>
         <h2 className="titulo">Elige tu Marca</h2>
@@ -49,5 +44,4 @@ function MainElige() {
     </main>
   );
 }
-
 export default MainElige;

@@ -7,14 +7,12 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   text-align: center;
 }
-
 .detalle-imagen {
   width: 100%;
   max-width: 1000px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
-
 .detalle-volver {
   display: inline-block;
   margin-bottom: 15px;
@@ -26,16 +24,13 @@
   cursor: pointer;
   transition: background 0.3s;
 }
-
 .detalle-volver:hover {
   background: #005fa3;
 }
-
 .detalle-card h2 {
   margin: 10px 0;
   color: #222;
 }
-
 .detalle-card p {
   font-size: 16px;
   color: #444;
@@ -52,7 +47,6 @@
   font-size: 0.95rem;
   color: #444;
 }
-
 .vehiculo-info-grid div {
   background: #fafafa;
   padding: 10px 14px;
@@ -60,7 +54,6 @@
   border: 1px solid #e0e0e0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
-
 .vehiculo-info-grid span {
   font-weight: 600;
   color: #222;

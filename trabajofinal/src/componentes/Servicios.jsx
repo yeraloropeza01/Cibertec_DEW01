@@ -3,15 +3,12 @@ import Mantenimiento from '../imagenes/mantenimiento.jpg';
 import Repuestos from '../imagenes/repuestos.jpg';
 import Garantia from '../imagenes/garantia.png';
 import "./Servicios.css";
-
 function Servicios() {
     const [activo, setActivo] = useState({
     mantenimiento: false,
     repuestos: false,
     garantia: false,
-    });
-
-  
+    });  
     const toggleTexto = (tipo) => {
     setActivo(prev => ({
       ...prev,

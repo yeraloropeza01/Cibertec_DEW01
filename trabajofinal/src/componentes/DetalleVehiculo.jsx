@@ -1,5 +1,4 @@
 import "./DetalleVehiculo.css";
-
 function DetalleVehiculo({ vehiculo, onVolver }) {
   return (
     <div className="detalle-card">
@@ -25,5 +24,4 @@ function DetalleVehiculo({ vehiculo, onVolver }) {
     </div>
   );
 }
-
 export default DetalleVehiculo;

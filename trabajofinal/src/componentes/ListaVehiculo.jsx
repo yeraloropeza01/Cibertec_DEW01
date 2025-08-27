@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
 const ListaVehiculos = () => {
   const [vehiculos, setVehiculos] = useState([]);
-
   useEffect(() => {
     const data = localStorage.getItem('vehicleData');
     if (data) {
@@ -15,14 +13,12 @@ const ListaVehiculos = () => {
       }
     }
   }, []);
-
   const eliminarVehiculo = index => {
     const nuevosVehiculos = [...vehiculos];
     nuevosVehiculos.splice(index, 1);
     setVehiculos(nuevosVehiculos);
     localStorage.setItem('vehicleData', JSON.stringify(nuevosVehiculos));
   };
-
   return (
     <div className='contenedor1080px sombra'>
       <div className='arri'>
@@ -52,5 +48,4 @@ const ListaVehiculos = () => {
     </div>
   );
 };
-
 export default ListaVehiculos;

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { GlobalContext } from '../GlobalContext';
 import "../componentes/RegistroVehiculo.css";
-
 class RegistroVehiculo extends Component {
   static contextType = GlobalContext
   constructor(props) {
@@ -16,12 +15,10 @@ class RegistroVehiculo extends Component {
       imagen2: ''
     };
   }
-
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
     console.log(e.target.value)
   };
-
   handleImageUpload = e => {
     const { name, files } = e.target;
     const reader = new FileReader();
@@ -30,14 +27,12 @@ class RegistroVehiculo extends Component {
     };
     if (files[0]) reader.readAsDataURL(files[0]);
   };
-
   handleSubmit = e => {
     e.preventDefault();
     localStorage.setItem('vehicleData', JSON.stringify(this.state));
     alert('Información del vehículo guardada en localStorage');
     this.props.mostrarPagina('lista_vehiculos')
   };
-
   render() {
     const {marcas} = this.context
     console.log(marcas)
@@ -48,7 +43,6 @@ class RegistroVehiculo extends Component {
         </div>
         <form className='formulario' onSubmit={this.handleSubmit}>
           <div className='izquierda'>
-
             <div className='control'>
             <label>Elije la Marca</label>
             <select name='marca' onChange={this.handleChange} required>
@@ -83,8 +77,7 @@ class RegistroVehiculo extends Component {
           </div>
           <div className='derecha'>
             <div className='control'>
-              <input name="imagen1" type="file" accept="image/*" onChange={this.handleImageUpload} required />
-                
+              <input name="imagen1" type="file" accept="image/*" onChange={this.handleImageUpload} required />                
                   {this.state.imagen1 && (
                     <div style={{ marginTop: '10px' }}>
                       <p>Vista previa de la Imagen 1:</p>
@@ -95,7 +88,6 @@ class RegistroVehiculo extends Component {
                       />
                     </div>
                   )}
-
             </div>
             <div className='control'>
               <input name="imagen2" type="file" accept="image/*" onChange={this.handleImageUpload} required />                        
@@ -110,19 +102,14 @@ class RegistroVehiculo extends Component {
                   </div>
                 )}
             </div>
-          </div>
-
-         
- 
+          </div>       
           <div className='nofloat'>
             <br/>
             <button type="submit">Guardar Vehículo</button>
           </div>
         </form>
-      </div>
-      
+      </div>      
     );
   }
 }
-
 export default RegistroVehiculo;

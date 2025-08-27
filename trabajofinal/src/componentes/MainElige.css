@@ -1,11 +1,9 @@
-
 .marcas {
     display: flex;
     flex-wrap: wrap;
     gap:13px;   
     text-align: center;
 }
-
 .marca {
   flex: 0 0 calc(25% - 10px); /* 3 columnas con espacio entre ellas */
   background-color: #f0f0f0;
@@ -13,11 +11,7 @@
   padding: 20px;
   box-sizing: border-box;
 }
-
-
-/* CSS */
 .botonM {
-  
   background-color: #995151;
   border-radius: 20px;
   border-width: 0;
@@ -41,7 +35,6 @@
 .botonM > span {
   font-weight: bolder;
 }
-
 .botonM:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
@@ -57,23 +50,18 @@
   width: 100%;
   border-radius: 20px;
 }
-
 .botonM:hover:before {
   animation: opacityFallbackIn 0s step-start forwards;
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
 }
-
 .botonM:after {
   background-color: #FFFFFF;
 }
-
 .botonM span {
   z-index: 1;
   position: relative;
 }
-
-.articulo1M {
-    
+.articulo1M {   
     flex: 1;                       
     padding: 20px;
     text-align: center;
@@ -85,33 +73,12 @@
     background-color: #ebebeb;
     filter: grayscale(0%);
 }
-
-
 .imagenM > img{
   width: 90%;
   margin-top: 22px;
   border-radius: 11px;
 }
-/* resposivee */
-/* @media (max-width: 1024px) {
-  .unoM, .dosM {
-    width: 90%;
-    flex-direction: column; 
-    gap: 15px;
-  }
-
-  .articuloM {
-    width: 90%;
-  }
-
-  .imagen > img {
-    width: 100%;
-  }
-} */
-
-/* -------- CELULARES -------- */
 @media (max-width: 600px) {
-
   .item {
     flex: 0 0 calc(50% - 10px);
     background-color: #f0f0f0;
@@ -119,5 +86,4 @@
     padding: 20px;
     box-sizing: border-box;
   }
-
 } 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../componentes/RegistroUsuario.css";
+import registro from "../imagenes/registro.jpg"
 import { GlobalContext } from '../GlobalContext';
-
 class RegistroUsuario extends Component {
   constructor(props) {
     super(props);
@@ -10,15 +10,11 @@ class RegistroUsuario extends Component {
       correo: '',
       telefono: ''
     };
-  }
-
-  
+  }  
   static contextType = GlobalContext
-
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
-
   handleSubmit = e => {
     e.preventDefault();
     const { nombre, correo, telefono } = this.state;
@@ -26,12 +22,10 @@ class RegistroUsuario extends Component {
     console.log("usuario registrado: " + this.state.nombre)
     this.props.mostrarPagina('registro_vehiculo')
   };
-
   handleDeleteuser = e => {
     localStorage.clear("userData")
     this.props.mostrarPagina('')
   }
-
   render() {
     let userData = localStorage.getItem('userData')
     userData = JSON.parse(userData)
@@ -54,7 +48,7 @@ class RegistroUsuario extends Component {
                     <h1 className="titulo">Registro de Usuario</h1>
                   </div>
                   <div className='imagen'>
-                    Colocar aqui una imagen
+                    <img src={registro} alt="" />
                   </div>
                   <form className='formulario' onSubmit={this.handleSubmit}>
                       <div className='control'>
@@ -78,5 +72,4 @@ class RegistroUsuario extends Component {
     );
   }
 }
-
 export default RegistroUsuario;

@@ -3,14 +3,12 @@ import  "../componentes/Promociones.css";
 import promo from "../imagenes/promo1.png"
 import promo2 from "../imagenes/promo2.jpg"
 import promo4 from "../imagenes/promo4.png"
-
 const Promociones = () => {
   return (
     <main className="sombra contenedor1080px">
     <div className='arri'>
         <h1 className="titulo">Promociones</h1>
     </div>
-
     <section className="promos-section">
       {/* Fila 1 */}
       <article className="promos-articulo">
@@ -28,7 +26,6 @@ const Promociones = () => {
          </div>
         </div>
       </article>
-
     {/* Fila 2 */}
     <article className="promos-articulo">
       <div className="promos-articulo2">
@@ -46,7 +43,6 @@ const Promociones = () => {
         </div>
       </div>
     </article>
-
     {/* Fila 3 */}
     <article className="promos-articulo">
       <div className="promos-articulo3">

@@ -100,9 +100,16 @@
   width: 100%;
   height: auto;
   display: block;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
   margin-top: 84px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* ⬅️ 0.7 segundos */
+}
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
 }
 
 .arrow {

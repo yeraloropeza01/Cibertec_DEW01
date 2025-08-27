@@ -50,7 +50,7 @@ const Promociones = () => {
           <p>
             <h3>¡Obtén hasta $500 DE DESCUENTO en tu primer auto!</h3>
               <div className="pregunta">
-                  Aprovecha nuestra oferta exclusiva y recibe un <b>descuento de hasta $500</b> en la compra de tu primer auto.<br />
+                  Aprovecha nuestra oferta exclusiva y recibe un <b>descuento de hasta $500</b><br /> en la compra de tu primer auto.<br />
               </div>
                  Dar tu primer paso hacia la conducción nunca fue tan fácil, por eso tenemos un descuento especial solo por ser tu primera compra, con un trámite sencillo y rápido<br />
            </p>

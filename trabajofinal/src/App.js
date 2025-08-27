@@ -8,11 +8,14 @@ import Servicios from './componentes/Servicios.jsx';
 import Promociones from './componentes/Promociones.jsx';
 import RegistroUsuario from './componentes/RegistroUsuario.jsx';
 import RegistroVehiculo from './componentes/RegistroVehiculo.jsx';
+import { GlobalProvider } from './GlobalContext';
+
 
 function App() {
   const [mostrarPagina, setMostrarPagina] = useState('');
   
   return (
+    <GlobalProvider>
     <div className="App">
       <Header mostrarPagina={(page) => setMostrarPagina(page)} />
       {
@@ -27,6 +30,7 @@ function App() {
       }
       <ParteFooter />
     </div>
+    </GlobalProvider>
   );
 }
 

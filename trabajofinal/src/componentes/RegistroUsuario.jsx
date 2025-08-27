@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../componentes/RegistroUsuario.css";
+import { GlobalContext } from '../GlobalContext';
 
 class RegistroUsuario extends Component {
   constructor(props) {
@@ -11,6 +12,8 @@ class RegistroUsuario extends Component {
     };
   }
 
+  static contextType = GlobalContext
+
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
@@ -21,6 +24,7 @@ class RegistroUsuario extends Component {
     localStorage.setItem('userData', JSON.stringify({ nombre, correo, telefono }));
     console.log("usuario registrado: " + this.state.nombre)
     this.props.mostrarPagina('registro_vehiculo')
+    this.context.mostrarMensaje();
   };
 
   render() {
@@ -35,15 +39,15 @@ class RegistroUsuario extends Component {
             <form className='formulario' onSubmit={this.handleSubmit}>
                 <div className='control'>
                     <label>¿Cuál es tu Nombre?</label>
-                    <input name="nombre" placeholder="Nombre" onChange={this.handleChange} required />
+                    <input name="nombre" placeholder="Nombre" onChange={this.handleChange} required autoComplete='off'/>
                 </div>
                 <div className='control'>
                     <label>¿Cuál es tu correo?</label>
-                    <input name="correo" type="email" placeholder="Correo" onChange={this.handleChange} required />
+                    <input name="correo" type="email" placeholder="Correo" onChange={this.handleChange} required  autoComplete='off'/>
                 </div>
                 <div className='control'>
                     <label>¿Cuál es tu celular?</label>
-                    <input name="telefono" placeholder="Teléfono" onChange={this.handleChange} required />
+                    <input name="telefono" placeholder="Teléfono" onChange={this.handleChange} required  autoComplete='off'/>
                 </div>
                 <button type="submit">Continuar</button>
             </form>

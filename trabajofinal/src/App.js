@@ -8,7 +8,6 @@ import Servicios from './componentes/Servicios.jsx';
 import Promociones from './componentes/Promociones.jsx';
 
 function App() {
-  const [mostrarElige, setMostrarElige] = useState(false);
   const [mostrarPagina, setMostrarPagina] = useState('');
   
   return (
@@ -16,7 +15,7 @@ function App() {
       <Header mostrarPagina={(page) => setMostrarPagina(page)} />
       {
         {
-          ''          : <Main/>,
+          ''          : <Main mostrarPagina={ (page) => setMostrarPagina(page) }  />,
           'marcas'    : <MainElige />,
           'servicios' : <Servicios />,
           'promos'    : <Promociones />

@@ -1,20 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./MainElige.css";
 import GaleriaVehiculos from "./Galeria.jsx";
+import { GlobalContext } from "../GlobalContext.jsx";
 
 function MainElige() {
+  const contextType = GlobalContext
   const [marcaSeleccionada, setMarcaSeleccionada] = useState(null);
+  const {marcas} = useContext(GlobalContext)
 
-  const marcasUno = [
-    { nombre: "Volkswagen", imagen: "volkswagen.png" },
-    { nombre: "Mercedes", imagen: "mercedez.png" },
-    { nombre: "Nissan", imagen: "nissan.png" },
-    { nombre: "Mazda", imagen: "mazda.png" },
-    { nombre: "Honda", imagen: "honda.png" },
-    { nombre: "Lexus", imagen: "lexus.png" },
-    { nombre: "Lamborghini", imagen: "lamboghini.png" },
-    { nombre: "BMW", imagen: "bmw.png" }
-  ];
 
   // 👇 Si ya seleccionó una marca, mostramos la galería
   if (marcaSeleccionada) {
@@ -33,11 +26,12 @@ function MainElige() {
 
   // 👇 Si no hay marca seleccionada, mostramos la lista de marcas
   return (
+    
     <main className="sombra contenedor1080px">
       <div>
         <h2 className="titulo">Elige tu Marca</h2>
         <section className="marcas">
-          {marcasUno.map((m, index) => (
+          {marcas.map((m, index) => (
             <div className="marca" key={index}>
               <div className="imagenM">
                 <img src={`/marcas/${m.imagen}`} alt={m.nombre} />

@@ -44,6 +44,7 @@ class RegistroUsuario extends Component {
                 <h1 className="titulo">Bienvenido {userData.nombre}</h1>
                 <br/>
                 <button onClick={ () => this.props.mostrarPagina('lista_vehiculos')}>Ver mis Vehiculos</button>
+                <button onClick={ () => this.props.mostrarPagina('registro_vehiculo')}>Registrar Vehiculo</button>
                 <button onClick={ this.handleDeleteuser}>Salir del Sistema</button>
                 <br/>
               </div>

@@ -24,10 +24,14 @@ const ListaVehiculos = () => {
   };
 
   return (
-    <div>
-      <h2>Vehículos Registrados</h2>
+    <div className='contenedor1080px sombra'>
+      <div className='arri'>
+          <h1 className="titulo">Registro de Usuario</h1>
+      </div>
       {vehiculos.length === 0 ? (
-        <p>No hay vehículos registrados.</p>
+        <>
+          <h1>No hay vehículos registrados.</h1>
+        </>
       ) : (
         vehiculos.map((vehiculo, index) => (
           <div key={index} style={{ border: '1px solid #ccc', padding: '10px', marginBottom: '10px' }}>

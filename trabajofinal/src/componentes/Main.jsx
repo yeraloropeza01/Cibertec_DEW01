@@ -4,7 +4,7 @@ import "./Main.css";
 
 function Main({mostrarPagina}){
    return (
-    <main class="main contenedor1080px sombra">
+    <main className="main contenedor1080px sombra">
         <div className='arri'>
             <h1 className="titulo">Bienvenido a Get Jyu Car</h1>
         </div>

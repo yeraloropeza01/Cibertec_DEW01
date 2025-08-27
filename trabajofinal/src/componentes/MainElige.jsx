@@ -33,7 +33,7 @@ function MainElige() {
 
   // 👇 Si no hay marca seleccionada, mostramos la lista de marcas
   return (
-    <main className="contenedor1080px">
+    <main className="sombra contenedor1080px">
       <div>
         <h2 className="titulo">Elige tu Marca</h2>
         <section className="marcas">

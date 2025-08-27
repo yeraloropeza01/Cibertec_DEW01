@@ -8,6 +8,7 @@ import Servicios from './componentes/Servicios.jsx';
 import Promociones from './componentes/Promociones.jsx';
 import RegistroUsuario from './componentes/RegistroUsuario.jsx';
 import RegistroVehiculo from './componentes/RegistroVehiculo.jsx';
+import ListaVehiculos from './componentes/ListaVehiculos.jsx';
 import { GlobalProvider } from './GlobalContext';
 
 
@@ -25,7 +26,8 @@ function App() {
           'servicios'         : <Servicios />,
           'promos'            : <Promociones />,
           'registro'          : <RegistroUsuario mostrarPagina={ (page) => setMostrarPagina(page) } />,
-          'registro_vehiculo' : <RegistroVehiculo />
+          'registro_vehiculo' : <RegistroVehiculo mostrarPagina={ (page) => setMostrarPagina(page) } />,
+          'lista_vehiculos'   : <ListaVehiculos/>
         }[mostrarPagina]
       }
       <ParteFooter />

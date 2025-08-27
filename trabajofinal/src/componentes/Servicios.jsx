@@ -19,9 +19,9 @@ function Servicios() {
     }));
   };
     return(
-    <main class="mainS">
+    <main className="sombra contenedor1080px">
         <div className='arri'>
-          <h1 className="tituloS">Servicios</h1>
+          <h1 className="titulo">Servicios</h1>
         </div>
         <div className='aba'>
           <section className="sectionS">

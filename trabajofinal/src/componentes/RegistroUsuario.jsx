@@ -12,6 +12,7 @@ class RegistroUsuario extends Component {
     };
   }
 
+  
   static contextType = GlobalContext
 
   handleChange = e => {
@@ -24,33 +25,54 @@ class RegistroUsuario extends Component {
     localStorage.setItem('userData', JSON.stringify({ nombre, correo, telefono }));
     console.log("usuario registrado: " + this.state.nombre)
     this.props.mostrarPagina('registro_vehiculo')
-    this.context.mostrarMensaje();
   };
 
+  handleDeleteuser = e => {
+    localStorage.clear("userData")
+    this.props.mostrarPagina('')
+  }
+
   render() {
+    let userData = localStorage.getItem('userData')
+    userData = JSON.parse(userData)
+    console.log(userData)
     return (
         <div className='registroUsuario contenedor1080px'>
-            <div className='arri'>
-                <h1 className="titulo">Registro de Usuario</h1>
-            </div>
-            <div className='imagen'>
-              Colocar aqui una imagen
-            </div>
-            <form className='formulario' onSubmit={this.handleSubmit}>
-                <div className='control'>
-                    <label>¿Cuál es tu Nombre?</label>
-                    <input name="nombre" placeholder="Nombre" onChange={this.handleChange} required autoComplete='off'/>
+            {
+              userData? (
+              <div className='arri'>
+                <h1 className="titulo">Bienvenido {userData.nombre}</h1>
+                <br/>
+                <button onClick={ () => this.props.mostrarPagina('lista_vehiculos')}>Ver mis Vehiculos</button>
+                <button onClick={ this.handleDeleteuser}>Salir del Sistema</button>
+                <br/>
+              </div>
+              ):(
+                <div>
+                  <div className='arri'>
+                    <h1 className="titulo">Registro de Usuario</h1>
+                  </div>
+                  <div className='imagen'>
+                    Colocar aqui una imagen
+                  </div>
+                  <form className='formulario' onSubmit={this.handleSubmit}>
+                      <div className='control'>
+                          <label>¿Cuál es tu Nombre?</label>
+                          <input name="nombre" placeholder="Nombre" onChange={this.handleChange} required autoComplete='off'/>
+                      </div>
+                      <div className='control'>
+                          <label>¿Cuál es tu correo?</label>
+                          <input name="correo" type="email" placeholder="Correo" onChange={this.handleChange} required  autoComplete='off'/>
+                      </div>
+                      <div className='control'>
+                          <label>¿Cuál es tu celular?</label>
+                          <input name="telefono" placeholder="Teléfono" onChange={this.handleChange} required  autoComplete='off'/>
+                      </div>
+                      <button type="submit">Continuar</button>
+                  </form>
                 </div>
-                <div className='control'>
-                    <label>¿Cuál es tu correo?</label>
-                    <input name="correo" type="email" placeholder="Correo" onChange={this.handleChange} required  autoComplete='off'/>
-                </div>
-                <div className='control'>
-                    <label>¿Cuál es tu celular?</label>
-                    <input name="telefono" placeholder="Teléfono" onChange={this.handleChange} required  autoComplete='off'/>
-                </div>
-                <button type="submit">Continuar</button>
-            </form>
+              )
+            }  
         </div>
     );
   }

@@ -1,48 +1,62 @@
 /* Contenedor general de los vehículos */
 .vehiculo-contenedor {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin: 20px auto 60px;
+  max-width: 1280px;
+  justify-content: center;   /* Centra las columnas si sobran espacios */
+  justify-items: center;     /* Centra cada tarjeta en su columna */
 }
+
 
 /* Tarjeta de cada vehículo */
 .vehiculo-card {
   background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  padding: 18px;
   text-align: center;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: pointer;
+  width: 100%;
+  max-width: 460px;
+  /* Hace que todas las tarjetas tengan un tamaño consistente */
 }
 
 .vehiculo-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
 /* Imagen del auto */
 .vehiculo-card img {
-  width: 100%;
-  height: 160px;
+  width: 90%;
   object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
 
 /* Texto de la tarjeta */
 .vehiculo-card h3 {
   margin: 10px 0 5px;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #222;
+  font-weight: 600;
 }
 
 .vehiculo-card p {
   margin: 4px 0;
   color: #555;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+}
+@media (max-width: 600px) {
+  .vehiculo-contenedor {
+    grid-template-columns: 1fr;  /* Una sola columna */
+  }
+
+  .vehiculo-card {
+    max-width: 95%;  /* Que ocupe casi todo el ancho */
+  }
 }

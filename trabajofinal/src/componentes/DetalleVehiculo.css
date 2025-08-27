@@ -44,3 +44,30 @@
 .detalle-card > p {
     text-align: left;
 }
+.vehiculo-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 12px 24px; /* espacio entre filas y columnas */
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.vehiculo-info-grid div {
+  background: #fafafa;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.vehiculo-info-grid span {
+  font-weight: 600;
+  color: #222;
+  margin-right: 6px;
+}
+@media (max-width: 600px) {
+  .vehiculo-info-grid {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+  }
+}

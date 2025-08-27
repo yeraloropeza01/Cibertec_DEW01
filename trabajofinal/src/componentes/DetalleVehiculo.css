@@ -10,7 +10,7 @@
 
 .detalle-imagen {
   width: 100%;
-  max-width: 400px;
+  max-width: 1000px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -40,4 +40,7 @@
   font-size: 16px;
   color: #444;
   margin: 6px 0;
+}
+.detalle-card > p {
+    text-align: left;
 }

@@ -1,0 +1,48 @@
+/* Contenedor general de los vehículos */
+.vehiculo-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+/* Tarjeta de cada vehículo */
+.vehiculo-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.vehiculo-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Imagen del auto */
+.vehiculo-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Texto de la tarjeta */
+.vehiculo-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.vehiculo-card p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 0.9rem;
+}

@@ -9,7 +9,7 @@ import Servicios from './componentes/Servicios.jsx';
 function App() {
   const [mostrarElige, setMostrarElige] = useState(false);
   const [mostrarServicios, setMostrarServicios] = useState(false);
-
+  
   return (
     <div className="App">
       <Header onServicio={() => setMostrarServicios(true)} />

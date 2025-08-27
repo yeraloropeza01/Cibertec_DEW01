@@ -1,0 +1,43 @@
+.detalle-card {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.detalle-imagen {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.detalle-volver {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  border: none;
+  background: #0077cc;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.detalle-volver:hover {
+  background: #005fa3;
+}
+
+.detalle-card h2 {
+  margin: 10px 0;
+  color: #222;
+}
+
+.detalle-card p {
+  font-size: 16px;
+  color: #444;
+  margin: 6px 0;
+}

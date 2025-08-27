@@ -19,10 +19,11 @@ function ParteFooter() {
         </div>
         <div className="footer-ce">
           <ul>
-            <li><a href="#!"><h3>Atención al cliente</h3></a></li>
-            <li><a href="#!">Sobre nosotros</a></li>
-            <li><a href="#!">Centros de servicio</a></li>
-            <li><a href="#!">Preguntas frecuentes</a></li>
+            <li><a href="#!"><h3>Indice</h3></a></li>
+            <li><a href="#!">Inicio</a></li>
+            <li><a href="#!">Marcas</a></li>
+            <li><a href="#!">Servicios</a></li>
+            <li><a href="#!">Promociones</a></li>
           </ul>
         </div>
         <div className="footer-de">
@@ -30,6 +31,7 @@ function ParteFooter() {
             <li><a href="#!"><h3>Contactos</h3></a></li>
             <li><a href="#!">📞 Teléfono: +51 01 234 5678</a></li>
             <li><a href="#!">✉️ Email: contacto@autoperu.com</a></li>
+            <li><a href="#!">Contactanos en las Redes Sociales</a></li>
             <li><a href="#!">Dirección: Av. Jesus Sideral Carrion 1234, Lima - Perú</a></li>
           </ul>
         </div>

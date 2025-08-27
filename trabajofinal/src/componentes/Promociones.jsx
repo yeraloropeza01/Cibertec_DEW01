@@ -9,9 +9,7 @@ const Promociones = () => {
             <div className='arri'>
                 <h1 className="titulo">Promociones</h1>
             </div>
-
           <section className="promos-section">
-                  {/* Fila 1 */}
                     <article className="promos-articulo">
                         <div className="promos-articulo1">
                                <img className="promo-img" src={promo} alt="" />
@@ -27,8 +25,6 @@ const Promociones = () => {
                          </div>
                        </div>
                     </article>
-
-                  {/* Fila 2 */}
                     <article className="promos-articulo">
                     <div className="promos-articulo2">
                           <img className="promo-img" src={promo2} alt="" />
@@ -45,8 +41,6 @@ const Promociones = () => {
                         </div>
                     </div>
                     </article>
-
-                  {/* Fila 3 */}
                     <article className="promos-articulo">
                       <div className="promos-articulo3">
                         <img className="promo-img" src={promo4} alt="" />

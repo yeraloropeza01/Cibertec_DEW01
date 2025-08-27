@@ -6,6 +6,7 @@ import Main from './componentes/Main.jsx';
 import ParteFooter from './componentes/Footer.jsx';
 import Servicios from './componentes/Servicios.jsx';
 import Promociones from './componentes/Promociones.jsx';
+import RegistroUsuario from './componentes/RegistroUsuario.jsx';
 
 function App() {
   const [mostrarPagina, setMostrarPagina] = useState('');
@@ -18,7 +19,8 @@ function App() {
           ''          : <Main mostrarPagina={ (page) => setMostrarPagina(page) }  />,
           'marcas'    : <MainElige />,
           'servicios' : <Servicios />,
-          'promos'    : <Promociones />
+          'promos'    : <Promociones />,
+          'registro'  : <RegistroUsuario />
         }[mostrarPagina]
       }
       <ParteFooter />

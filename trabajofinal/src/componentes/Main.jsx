@@ -4,26 +4,26 @@ import "./Main.css";
 
 function Main({mostrarPagina}){
    return (
-    <main class="main">
+    <main class="main contenedor1080px sombra">
         <div className='arri'>
-          <h1 className="titulo">¿Qué desea realizar?</h1>
+            <h1 className="titulo">Bienvenido a Get Jyu Car</h1>
         </div>
         <div className='aba'>
           <section className="section">
             <article className="articulo">
-            <div className="articulo1">
+            <div className="articulo1" onClick={ () => mostrarPagina('registro')} >
                 <div className="imagen">
                   <img src={Vende} alt=""/>
                 </div>
-                <button className='boton'>
+                <button  className='boton'>
                   <span>¿Quieres vender?</span>
                 </button>
             </div>
-            <div className="articulo2">
+            <div className="articulo2" onClick={ () => mostrarPagina('marcas')}>
                 <div className="imagen">
                   <img src={Compra} alt=""/>
                 </div>
-                <button onClick={ () => mostrarPagina('marcas')} className='boton'>
+                <button className='boton'>
                   <span>¿Quieres comprar?</span>
                 </button>
             </div>

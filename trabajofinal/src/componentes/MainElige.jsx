@@ -35,7 +35,7 @@ function MainElige() {
   return (
     <main className="contenedor1080px">
       <div>
-        <h2 className="titul">Elige tu Marca</h2>
+        <h2 className="titulo">Elige tu Marca</h2>
         <section className="marcas">
           {marcasUno.map((m, index) => (
             <div className="marca" key={index}>

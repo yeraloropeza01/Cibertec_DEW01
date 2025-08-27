@@ -61,15 +61,13 @@
   margin: 0 5%;
 }
 /*Titulos (h3)*/
-.promos-texto h3,
-.promos-texto-izq h3 {
+.promos-texto h3, .promos-texto-izq h3 {
   font-size: 30px; 
   font-family: "SF Automaton", Arial, sans-serif;
   margin-bottom: 10px;
 }
 /*Texto destacad */
-.promos-texto .pregunta,
-.promos-texto-izq .pregunta {
+.promos-texto .pregunta, .promos-texto-izq .pregunta {
   color: cadetblue;
   font-size: 18px;
   font-family: Arial, sans-serif;

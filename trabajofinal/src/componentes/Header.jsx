@@ -6,7 +6,7 @@ import banner from "../imagenes/banner_1.webp";
 import banner1 from "../imagenes/tres.jpeg"
 import banner2 from "../imagenes/tres.jpeg"
 
-const Header = ({onServicio}) =>{
+const Header = ({mostrarPagina}) =>{
     // Array de imágenes del carrusel
     const images = [banner, banner1,banner2];
 
@@ -45,11 +45,26 @@ const Header = ({onServicio}) =>{
           </div>
           <nav className="nav ">
             <ul>
-              <li><a href="daszda">MODELOS</a></li>
-              <li><button onClick={onServicio} className="link-button">
+              <li>
+                  <button onClick={ () => {mostrarPagina('')}} className="link-button">
+                    INICIO
+                  </button>
+              </li>
+              <li>
+                  <button onClick={ () => {mostrarPagina('marcas')}} className="link-button">
+                    MARCAS
+                  </button>
+              </li>
+              <li>
+                  <button onClick={ () => {mostrarPagina('servicios')}} className="link-button">
                     SERVICIOS
-                  </button></li>
-              <li><a href="das">PROMOCIONES</a></li>
+                  </button>
+              </li>
+              <li>
+                <button onClick={ () => {mostrarPagina('promos')}} className="link-button">
+                    PROMOCIONES
+                  </button>
+              </li>
               
 
             </ul>

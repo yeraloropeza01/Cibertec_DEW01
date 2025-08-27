@@ -2,7 +2,7 @@ import Vende from '../imagenes/v1.jpg';
 import Compra from '../imagenes/compra_4.jpg';
 import "./Main.css";
 
-function ParteMain({onElegir}){
+function Main({onElegir}){
    return (
     <main class="main">
         <div className='arri'>
@@ -33,4 +33,4 @@ function ParteMain({onElegir}){
     </main> 
    );
 }
-export default ParteMain;
+export default Main;

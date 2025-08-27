@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./MainElige.css";
 import GaleriaVehiculos from "./Galeria.jsx";
 
-function ParteMainElige() {
+function MainElige() {
   const [marcaSeleccionada, setMarcaSeleccionada] = useState(null);
 
   const marcasUno = [
@@ -56,4 +56,4 @@ function ParteMainElige() {
   );
 }
 
-export default ParteMainElige;
+export default MainElige;

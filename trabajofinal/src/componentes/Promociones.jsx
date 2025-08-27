@@ -1,7 +1,5 @@
 import React from "react";
 import "../componentes/Promociones.css";
-import publica from "../imagenes/promo1.webp";
-import promociones_1 from "../imagenes/promociones1.jpg"
 
 const Promociones = () => {
   return (
@@ -14,7 +12,7 @@ const Promociones = () => {
       {/* Fila 1 */}
       <article className="promos-articulo">
         <div className="promos-articulo1">
-          <img className="promo-img"  src={promociones_1} alt="Publica tu auto" />
+          
           <div className="promos-texto">
             <p>
                 <h3>Publica tu auto GRATIS por 30 días</h3>
@@ -42,14 +40,12 @@ const Promociones = () => {
             ✅ Aprobación rápida y segura
           </p>
         </div>
-        <img className="promo-img" src={publica} alt="Financiamiento" />
       </div>
     </article>
 
     {/* Fila 3 */}
     <article className="promos-articulo">
       <div className="promos-articulo3">
-        <img className="promo-img" src={publica} alt="Bonificación" />
         <div className="promos-texto">
           <p>
             <h3>¡Obtén hasta $500 DE DESCUENTO en tu primer auto!</h3>

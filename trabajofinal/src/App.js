@@ -17,7 +17,8 @@ function App() {
         <Servicios />
       ) : mostrarElige ? (
         <ParteMainElige />
-      ) : (
+      ) 
+      : (
         <ParteMain onElegir={() => setMostrarElige(true)} />
       )}
       <ParteFooter />

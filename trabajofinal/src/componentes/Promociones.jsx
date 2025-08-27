@@ -1,5 +1,8 @@
 import React from "react";
-import "../componentes/Promociones.css";
+import  "../componentes/Promociones.css";
+import promo from "../imagenes/promo1.png"
+import promo2 from "../imagenes/promo2.jpg"
+import promo4 from "../imagenes/promo4.png"
 
 const Promociones = () => {
   return (
@@ -12,7 +15,7 @@ const Promociones = () => {
       {/* Fila 1 */}
       <article className="promos-articulo">
         <div className="promos-articulo1">
-          
+           <img className="promo-img" src={promo} alt="" />
           <div className="promos-texto">
             <p>
                 <h3>Publica tu auto GRATIS por 30 días</h3>
@@ -29,6 +32,7 @@ const Promociones = () => {
     {/* Fila 2 */}
     <article className="promos-articulo">
       <div className="promos-articulo2">
+          <img className="promo-img" src={promo2} alt="" />
         <div className="promos-texto-izq">
           <p>
             <h3>¡Financia tu auto usado sin intereses el primer mes!</h3>
@@ -46,6 +50,7 @@ const Promociones = () => {
     {/* Fila 3 */}
     <article className="promos-articulo">
       <div className="promos-articulo3">
+        <img className="promo-img" src={promo4} alt="" />
         <div className="promos-texto">
           <p>
             <h3>¡Obtén hasta $500 DE DESCUENTO en tu primer auto!</h3>

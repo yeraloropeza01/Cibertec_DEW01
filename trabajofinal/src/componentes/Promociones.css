@@ -46,7 +46,6 @@
   width: 50%;
 }
 
-
 /* Colores diferentes */
 .promos-articulo1 {
   background-color: rgb(52, 102, 102);
@@ -104,7 +103,6 @@
    font-family: "SF Automaton", Arial, sans-serif;
 }
 
-
 /*derecho*/
 .promos-texto > p > .pregunta {
   color:cadetblue;
@@ -119,10 +117,6 @@
   border-radius: 10px;
   object-fit: cover; /* 🔥 recorta bien si la imagen no encaja */
 }
-
-
-
-
 
 @keyframes aparecer {
   to {

@@ -19,29 +19,33 @@ class RegistroUsuario extends Component {
     e.preventDefault();
     const { nombre, correo, telefono } = this.state;
     localStorage.setItem('userData', JSON.stringify({ nombre, correo, telefono }));
-    //this.setState({ redirect: true });
+    console.log("usuario registrado: " + this.state.nombre)
+    this.props.mostrarPagina('registro_vehiculo')
   };
 
   render() {
     return (
-        <div id="RegistroUsuario" className='contenedor1080px'>
+        <div className='registroUsuario contenedor1080px'>
             <div className='arri'>
                 <h1 className="titulo">Registro de Usuario</h1>
             </div>
-            <form onSubmit={this.handleSubmit}>
-                <div classnaç='control'>
+            <div className='imagen'>
+              Colocar aqui una imagen
+            </div>
+            <form className='formulario' onSubmit={this.handleSubmit}>
+                <div className='control'>
                     <label>¿Cuál es tu Nombre?</label>
                     <input name="nombre" placeholder="Nombre" onChange={this.handleChange} required />
                 </div>
-                <div classnaç='control'>
+                <div className='control'>
                     <label>¿Cuál es tu correo?</label>
                     <input name="correo" type="email" placeholder="Correo" onChange={this.handleChange} required />
                 </div>
-                <div classnaç='control'>
+                <div className='control'>
                     <label>¿Cuál es tu celular?</label>
                     <input name="telefono" placeholder="Teléfono" onChange={this.handleChange} required />
                 </div>
-                <button type="submit">Registrar</button>
+                <button type="submit">Continuar</button>
             </form>
         </div>
     );

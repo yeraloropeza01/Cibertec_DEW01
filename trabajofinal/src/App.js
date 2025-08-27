@@ -7,6 +7,7 @@ import ParteFooter from './componentes/Footer.jsx';
 import Servicios from './componentes/Servicios.jsx';
 import Promociones from './componentes/Promociones.jsx';
 import RegistroUsuario from './componentes/RegistroUsuario.jsx';
+import RegistroVehiculo from './componentes/RegistroVehiculo.jsx';
 
 function App() {
   const [mostrarPagina, setMostrarPagina] = useState('');
@@ -16,11 +17,12 @@ function App() {
       <Header mostrarPagina={(page) => setMostrarPagina(page)} />
       {
         {
-          ''          : <Main mostrarPagina={ (page) => setMostrarPagina(page) }  />,
-          'marcas'    : <MainElige />,
-          'servicios' : <Servicios />,
-          'promos'    : <Promociones />,
-          'registro'  : <RegistroUsuario />
+          ''                  : <Main mostrarPagina={ (page) => setMostrarPagina(page) }  />,
+          'marcas'            : <MainElige />,
+          'servicios'         : <Servicios />,
+          'promos'            : <Promociones />,
+          'registro'          : <RegistroUsuario mostrarPagina={ (page) => setMostrarPagina(page) } />,
+          'registro_vehiculo' : <RegistroVehiculo />
         }[mostrarPagina]
       }
       <ParteFooter />

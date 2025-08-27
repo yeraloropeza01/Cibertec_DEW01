@@ -7,7 +7,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 .promos-titulo {
   background-color: #555;
   display: block;
@@ -17,7 +16,6 @@
   text-align: center;
   color: white;
 }
-
 .promos-section {
   display: flex;
   flex-direction: column;
@@ -26,11 +24,9 @@
   padding: 20px;
   background-color: whitesmoke;
 }
-
 .promos-articulo {
   width: 68%;
 }
-
 .promos-articulo1,.promos-articulo2,.promos-articulo3 {
   display: flex;
   align-items: center; 
@@ -41,11 +37,9 @@
   color: white;
   height: auto;
 }
-
 .promos-articulo1 > .promos-texto {
   width: 50%;
 }
-
 /* Colores diferentes */
 .promos-articulo1 {
   background-color: rgb(52, 102, 102);
@@ -56,68 +50,39 @@
 .promos-articulo3 {
   background-color: #7f858d;
 }
-
-/* Texto */
-
-.promos-texto {
-  font-size: 20px;
-  font-family: "SF Automaton", Arial, sans-serif;
-  text-align: left;
-  transform: translateX(50px);
-  animation: aparecer 1s ease-out forwards;
-  opacity: 0;
-  transform: translateX(50px);
-  animation: aparecer 1s ease-out forwards;
-  float: right;
-  margin-left: 5%;
-}
-
+.promos-texto,
 .promos-texto-izq {
-  font-size: 20px;
-  font-family: "SF Automaton", Arial, sans-serif;
+  font-size: 16px; 
+  font-family: Arial, sans-serif; 
   text-align: left;
   transform: translateX(50px);
   animation: aparecer 1s ease-out forwards;
   opacity: 0;
-  transform: translateX(50px);
-  animation: aparecer 1s ease-out forwards;
-  float: right;
-  margin-right: 5%;
+  margin: 0 5%;
 }
-
-/*Titulo del texto (h2)*/
- 
-.promos-texto > p > h3{
-  font-size: 30px;
+/*Titulos (h3)*/
+.promos-texto h3,
+.promos-texto-izq h3 {
+  font-size: 30px; 
+  font-family: "SF Automaton", Arial, sans-serif;
+  margin-bottom: 10px;
 }
-
-/*lado izquierdo*/
-
-.promos-texto-izq > p > h3{
-  font-size: 30px;
+/*Texto destacad */
+.promos-texto .pregunta,
+.promos-texto-izq .pregunta {
+  color: cadetblue;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
-
-.promos-texto-izq > p > .pregunta {
-  color:cadetblue;
-  font-size: 25px;
-   font-family: "SF Automaton", Arial, sans-serif;
-}
-
-/*derecho*/
-.promos-texto > p > .pregunta {
-  color:cadetblue;
-  font-size: 25px;
-   font-family: "SF Automaton", Arial, sans-serif;
-}
-
 /*Imagenes*/
 .promo-img {
-  width: 45%;     /* 🔥 ocupa casi la mitad */
-  height: auto;   /* mantiene proporción */
+  width: 45%;    
+  height: auto;  
   border-radius: 10px;
-  object-fit: cover; /* 🔥 recorta bien si la imagen no encaja */
+  object-fit: cover; 
 }
-
 @keyframes aparecer {
   to {
     opacity: 1;
